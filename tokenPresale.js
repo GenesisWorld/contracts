@@ -241,8 +241,8 @@ contract StandardToken is BasicToken, ERC20 {
  */
 contract GenesisToken is StandardToken {
 
-  string public name = "Genesis Token";
-  string public symbol = "AHT";
+  string public name = "Genesis World";
+  string public symbol = "GW";
   uint256 public decimals = 18;
   uint256 public INITIAL_SUPPLY = 100000000 * 1 ether;
 
@@ -260,7 +260,7 @@ contract GenesisToken is StandardToken {
 contract GenesisTokenPreSale is Haltable {
     using SafeMath for uint;
 
-    string public name = "Genesis Token PreSale";
+    string public name = "Genesis World PreSale";
 
     GenesisToken public token;
     address public beneficiary;
