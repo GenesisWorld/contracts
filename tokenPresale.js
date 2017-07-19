@@ -243,7 +243,7 @@ contract GenesisToken is StandardToken {
 
   string public name = "Genesis World";
   string public symbol = "GW";
-  uint256 public decimals = 18;
+  uint256 public decimals = 10;
   uint256 public INITIAL_SUPPLY = 100000000 * 1 ether;
 
   /**
@@ -324,7 +324,7 @@ contract GenesisTokenPreSale is Haltable {
     }
 
     function () payable stopInEmergency{
-        if (msg.value < 0.01 * 1 ether) throw;
+        if (msg.value < 0.01 * 1 ether) throw; // Minimum Transfer Amount 0.01 Ether
         doPurchase(msg.sender);
     }
 
