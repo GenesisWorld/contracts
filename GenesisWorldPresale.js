@@ -109,6 +109,7 @@ contract GenesisToken is owned, token {
     //event FrozenFunds(address target, bool frozen);
 
     /* Initializes contract with initial supply tokens to the creator of the contract */
+	/*       100,000,000.0000000000 GW, 10 digits after the point */
     function GenesisToken (
     ) token (1000000000000000000, "Genesis World", 10, "GW") {}
 
